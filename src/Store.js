@@ -23,7 +23,10 @@ function Store(OriginalComponent){
 
     render(){
       return(
-        <OriginalComponent store={this.state}/>
+        <OriginalComponent 
+          store={this.state}
+          updateHomeInitialState = {this.updateHomeInitialState}
+        />
       )
     }
   }
